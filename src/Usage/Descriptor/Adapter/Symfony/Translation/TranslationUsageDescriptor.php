@@ -1,6 +1,6 @@
 <?php
 
-namespace Yokai\SafeDelete\Usage\Descriptor\Adapter\Symfony\Translator;
+namespace Yokai\SafeDelete\Usage\Descriptor\Adapter\Symfony\Translation;
 
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Yokai\SafeDelete\Usage\Descriptor\ObjectDescriptorAwareInterface;
