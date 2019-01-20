@@ -1,0 +1,30 @@
+{
+  "name": "yokai/safe-delete",
+  "description": "Analyze objects relation. Ensure that objects can be deleted using introspection.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yann Eugoné",
+      "email": "eugone.yann@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "suggest": {
+    "doctrine/orm": "Analyze entities metadata and prevent database errors.",
+    "symfony/framework-bundle": "Register automatically some useful services",
+    "symfony/property-access": "Describe objects by targeting properties.",
+    "symfony/translation": "Use translator to describe usages."
+  },
+  "autoload": {
+    "psr-4": {
+      "Yokai\\SafeDelete\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  }
+}

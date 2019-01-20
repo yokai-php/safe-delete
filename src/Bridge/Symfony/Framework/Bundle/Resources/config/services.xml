@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults public="false"/>
+
+        <service id="Yokai\SafeDelete\Usage\Finder\UsageFinderInterface" alias="yokai_safe_delete.usage_finder"/>
+        <service id="yokai_safe_delete.usage_finder" class="Yokai\SafeDelete\Usage\Finder\UsageFinder">
+            <argument type="tagged" tag="yokai_safe_delete.usage_finder"/>
+        </service>
+
+        <service id="Yokai\SafeDelete\Usage\Descriptor\ObjectDescriptorInterface" alias="yokai_safe_delete.object_descriptor"/>
+        <service id="yokai_safe_delete.object_descriptor" class="Yokai\SafeDelete\Usage\Descriptor\ObjectDescriptor">
+            <argument type="tagged" tag="yokai_safe_delete.object_descriptor"/>
+        </service>
+    </services>
+</container>
